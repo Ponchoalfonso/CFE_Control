@@ -1,0 +1,2 @@
+class PowerFactorNozzleHTransformer < ApplicationRecord
+end

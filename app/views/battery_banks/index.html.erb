@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Battery Banks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell</th>
+      <th>Without charge</th>
+      <th>Voltage 5min</th>
+      <th>Amperage 5min</th>
+      <th>Voltage 15min</th>
+      <th>Amperage 15min</th>
+      <th>Voltage 30min</th>
+      <th>Amperage 30min</th>
+      <th>Voltage 1hr</th>
+      <th>Amperage 1hr</th>
+      <th>Voltage 2hr</th>
+      <th>Amperage 2hr</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @battery_banks.each do |battery_bank| %>
+      <tr>
+        <td><%= battery_bank.cell %></td>
+        <td><%= battery_bank.without_charge %></td>
+        <td><%= battery_bank.voltage_5min %></td>
+        <td><%= battery_bank.amperage_5min %></td>
+        <td><%= battery_bank.voltage_15min %></td>
+        <td><%= battery_bank.amperage_15min %></td>
+        <td><%= battery_bank.voltage_30min %></td>
+        <td><%= battery_bank.amperage_30min %></td>
+        <td><%= battery_bank.voltage_1hr %></td>
+        <td><%= battery_bank.amperage_1hr %></td>
+        <td><%= battery_bank.voltage_2hr %></td>
+        <td><%= battery_bank.amperage_2hr %></td>
+        <td><%= link_to 'Show', battery_bank %></td>
+        <td><%= link_to 'Edit', edit_battery_bank_path(battery_bank) %></td>
+        <td><%= link_to 'Destroy', battery_bank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Battery Bank', new_battery_bank_path %>

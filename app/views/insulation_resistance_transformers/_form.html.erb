@@ -1,0 +1,57 @@
+<%= form_for(insulation_resistance_transformer) do |f| %>
+  <% if insulation_resistance_transformer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(insulation_resistance_transformer.errors.count, "error") %> prohibited this insulation_resistance_transformer from being saved:</h2>
+
+      <ul>
+      <% insulation_resistance_transformer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :proof %>
+    <%= f.text_field :proof %>
+  </div>
+
+  <div class="field">
+    <%= f.label :line %>
+    <%= f.text_field :line %>
+  </div>
+
+  <div class="field">
+    <%= f.label :guard %>
+    <%= f.text_field :guard %>
+  </div>
+
+  <div class="field">
+    <%= f.label :earth %>
+    <%= f.text_field :earth %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mide %>
+    <%= f.text_field :mide %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number %>
+    <%= f.text_field :number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weather %>
+    <%= f.text_field :weather %>
+  </div>
+
+  <div class="field">
+    <%= f.label :resistance %>
+    <%= f.text_field :resistance %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

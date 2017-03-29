@@ -1,0 +1,1 @@
+json.array! @power_factor_nozzle_h_transformers, partial: 'power_factor_nozzle_h_transformers/power_factor_nozzle_h_transformer', as: :power_factor_nozzle_h_transformer

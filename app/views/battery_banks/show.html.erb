@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cell:</strong>
+  <%= @battery_bank.cell %>
+</p>
+
+<p>
+  <strong>Without charge:</strong>
+  <%= @battery_bank.without_charge %>
+</p>
+
+<p>
+  <strong>Voltage 5min:</strong>
+  <%= @battery_bank.voltage_5min %>
+</p>
+
+<p>
+  <strong>Amperage 5min:</strong>
+  <%= @battery_bank.amperage_5min %>
+</p>
+
+<p>
+  <strong>Voltage 15min:</strong>
+  <%= @battery_bank.voltage_15min %>
+</p>
+
+<p>
+  <strong>Amperage 15min:</strong>
+  <%= @battery_bank.amperage_15min %>
+</p>
+
+<p>
+  <strong>Voltage 30min:</strong>
+  <%= @battery_bank.voltage_30min %>
+</p>
+
+<p>
+  <strong>Amperage 30min:</strong>
+  <%= @battery_bank.amperage_30min %>
+</p>
+
+<p>
+  <strong>Voltage 1hr:</strong>
+  <%= @battery_bank.voltage_1hr %>
+</p>
+
+<p>
+  <strong>Amperage 1hr:</strong>
+  <%= @battery_bank.amperage_1hr %>
+</p>
+
+<p>
+  <strong>Voltage 2hr:</strong>
+  <%= @battery_bank.voltage_2hr %>
+</p>
+
+<p>
+  <strong>Amperage 2hr:</strong>
+  <%= @battery_bank.amperage_2hr %>
+</p>
+
+<%= link_to 'Edit', edit_battery_bank_path(@battery_bank) %> |
+<%= link_to 'Back', battery_banks_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Outlet tap:</strong>
+  <%= @transformation_ratio_transformer.outlet_tap %>
+</p>
+
+<p>
+  <strong>Nominal relationship:</strong>
+  <%= @transformation_ratio_transformer.nominal_relationship %>
+</p>
+
+<p>
+  <strong>Step a:</strong>
+  <%= @transformation_ratio_transformer.step_a %>
+</p>
+
+<p>
+  <strong>Step b:</strong>
+  <%= @transformation_ratio_transformer.step_b %>
+</p>
+
+<p>
+  <strong>Step c:</strong>
+  <%= @transformation_ratio_transformer.step_c %>
+</p>
+
+<p>
+  <strong>Difference:</strong>
+  <%= @transformation_ratio_transformer.difference %>
+</p>
+
+<%= link_to 'Edit', edit_transformation_ratio_transformer_path(@transformation_ratio_transformer) %> |
+<%= link_to 'Back', transformation_ratio_transformers_path %>

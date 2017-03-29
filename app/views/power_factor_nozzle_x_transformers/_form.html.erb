@@ -1,0 +1,37 @@
+<%= form_for(power_factor_nozzle_x_transformer) do |f| %>
+  <% if power_factor_nozzle_x_transformer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(power_factor_nozzle_x_transformer.errors.count, "error") %> prohibited this power_factor_nozzle_x_transformer from being saved:</h2>
+
+      <ul>
+      <% power_factor_nozzle_x_transformer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %>
+    <%= f.text_field :number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mide %>
+    <%= f.text_field :mide %>
+  </div>
+
+  <div class="field">
+    <%= f.label :test_mode %>
+    <%= f.text_field :test_mode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lost_mv %>
+    <%= f.text_field :lost_mv %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

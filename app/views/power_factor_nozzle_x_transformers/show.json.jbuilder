@@ -1,0 +1,1 @@
+json.partial! "power_factor_nozzle_x_transformers/power_factor_nozzle_x_transformer", power_factor_nozzle_x_transformer: @power_factor_nozzle_x_transformer

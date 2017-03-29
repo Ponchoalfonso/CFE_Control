@@ -1,0 +1,2 @@
+module InsulationResistanceSwitchesHelper
+end

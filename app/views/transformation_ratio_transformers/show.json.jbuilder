@@ -1,0 +1,1 @@
+json.partial! "transformation_ratio_transformers/transformation_ratio_transformer", transformation_ratio_transformer: @transformation_ratio_transformer
