@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @battery_bank.name %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @battery_bank.number %>
+</p>
+
+<%= link_to 'Edit', edit_battery_bank_path(@battery_bank) %> |
+<%= link_to 'Back', battery_banks_path %>
