@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :battery_banks
+<<<<<<< HEAD
   resources :transformation_ratio_transformers
   resources :necklace_energized_bor_h_transformers
   resources :necklace_energized_bor_x_transformers
@@ -9,5 +10,13 @@ Rails.application.routes.draw do
   resources :hot_collar_switches
   resources :insulation_resistance_switches
   resources :power_factor_switches
+=======
+  resources :own_use_transformers
+  resources :power_transformers
+  resources :switches
+  resources :subestations
+  resources :regions
+  resources :zones
+>>>>>>> master
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

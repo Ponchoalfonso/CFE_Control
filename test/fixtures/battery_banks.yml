@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   cell: 
   without_charge: 1.5
   voltage_5min: 1.5
@@ -27,3 +28,11 @@ two:
   amperage_1hr: 1.5
   voltage_2hr: 1.5
   amperage_2hr: 1.5
+=======
+  name: MyString
+  number: 1
+
+two:
+  name: MyString
+  number: 1
+>>>>>>> master

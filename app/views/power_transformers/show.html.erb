@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @power_transformer.name %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @power_transformer.number %>
+</p>
+
+<%= link_to 'Edit', edit_power_transformer_path(@power_transformer) %> |
+<%= link_to 'Back', power_transformers_path %>

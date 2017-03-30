@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Own Use Transformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @own_use_transformers.each do |own_use_transformer| %>
+      <tr>
+        <td><%= own_use_transformer.name %></td>
+        <td><%= own_use_transformer.number %></td>
+        <td><%= link_to 'Show', own_use_transformer %></td>
+        <td><%= link_to 'Edit', edit_own_use_transformer_path(own_use_transformer) %></td>
+        <td><%= link_to 'Destroy', own_use_transformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Own Use Transformer', new_own_use_transformer_path %>

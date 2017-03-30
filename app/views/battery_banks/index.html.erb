@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+<<<<<<< HEAD
       <th>Cell</th>
       <th>Without charge</th>
       <th>Voltage 5min</th>
@@ -17,6 +18,10 @@
       <th>Amperage 1hr</th>
       <th>Voltage 2hr</th>
       <th>Amperage 2hr</th>
+=======
+      <th>Name</th>
+      <th>Number</th>
+>>>>>>> master
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +29,7 @@
   <tbody>
     <% @battery_banks.each do |battery_bank| %>
       <tr>
+<<<<<<< HEAD
         <td><%= battery_bank.cell %></td>
         <td><%= battery_bank.without_charge %></td>
         <td><%= battery_bank.voltage_5min %></td>
@@ -36,6 +42,10 @@
         <td><%= battery_bank.amperage_1hr %></td>
         <td><%= battery_bank.voltage_2hr %></td>
         <td><%= battery_bank.amperage_2hr %></td>
+=======
+        <td><%= battery_bank.name %></td>
+        <td><%= battery_bank.number %></td>
+>>>>>>> master
         <td><%= link_to 'Show', battery_bank %></td>
         <td><%= link_to 'Edit', edit_battery_bank_path(battery_bank) %></td>
         <td><%= link_to 'Destroy', battery_bank, method: :delete, data: { confirm: 'Are you sure?' } %></td>

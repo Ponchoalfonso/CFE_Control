@@ -17,7 +17,11 @@ class BatteryBanksControllerTest < ActionDispatch::IntegrationTest
 
   test "should create battery_bank" do
     assert_difference('BatteryBank.count') do
+<<<<<<< HEAD
       post battery_banks_url, params: { battery_bank: { amperage_15min: @battery_bank.amperage_15min, amperage_1hr: @battery_bank.amperage_1hr, amperage_2hr: @battery_bank.amperage_2hr, amperage_30min: @battery_bank.amperage_30min, amperage_5min: @battery_bank.amperage_5min, cell: @battery_bank.cell, voltage_15min: @battery_bank.voltage_15min, voltage_1hr: @battery_bank.voltage_1hr, voltage_2hr: @battery_bank.voltage_2hr, voltage_30min: @battery_bank.voltage_30min, voltage_5min: @battery_bank.voltage_5min, without_charge: @battery_bank.without_charge } }
+=======
+      post battery_banks_url, params: { battery_bank: { name: @battery_bank.name, number: @battery_bank.number } }
+>>>>>>> master
     end
 
     assert_redirected_to battery_bank_url(BatteryBank.last)
@@ -34,7 +38,11 @@ class BatteryBanksControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update battery_bank" do
+<<<<<<< HEAD
     patch battery_bank_url(@battery_bank), params: { battery_bank: { amperage_15min: @battery_bank.amperage_15min, amperage_1hr: @battery_bank.amperage_1hr, amperage_2hr: @battery_bank.amperage_2hr, amperage_30min: @battery_bank.amperage_30min, amperage_5min: @battery_bank.amperage_5min, cell: @battery_bank.cell, voltage_15min: @battery_bank.voltage_15min, voltage_1hr: @battery_bank.voltage_1hr, voltage_2hr: @battery_bank.voltage_2hr, voltage_30min: @battery_bank.voltage_30min, voltage_5min: @battery_bank.voltage_5min, without_charge: @battery_bank.without_charge } }
+=======
+    patch battery_bank_url(@battery_bank), params: { battery_bank: { name: @battery_bank.name, number: @battery_bank.number } }
+>>>>>>> master
     assert_redirected_to battery_bank_url(@battery_bank)
   end
 
