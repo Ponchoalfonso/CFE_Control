@@ -1,2 +1,0 @@
-class HotCollarSwitch < ApplicationRecord
-end

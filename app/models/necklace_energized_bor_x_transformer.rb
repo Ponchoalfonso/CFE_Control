@@ -1,2 +1,0 @@
-class NecklaceEnergizedBorXTransformer < ApplicationRecord
-end

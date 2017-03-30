@@ -1,2 +1,0 @@
-class PowerFactorNozzleHTransformer < ApplicationRecord
-end

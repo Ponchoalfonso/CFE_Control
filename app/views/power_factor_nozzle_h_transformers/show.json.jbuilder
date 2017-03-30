@@ -1,1 +1,0 @@
-json.partial! "power_factor_nozzle_h_transformers/power_factor_nozzle_h_transformer", power_factor_nozzle_h_transformer: @power_factor_nozzle_h_transformer

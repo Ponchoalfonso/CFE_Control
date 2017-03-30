@@ -1,2 +1,0 @@
-class TransformationRatioTransformer < ApplicationRecord
-end

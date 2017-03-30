@@ -1,2 +1,0 @@
-class InsulationResistanceSwitch < ApplicationRecord
-end

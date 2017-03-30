@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :battery_banks
 <<<<<<< HEAD
   resources :transformation_ratio_transformers
@@ -18,5 +19,7 @@ Rails.application.routes.draw do
   resources :regions
   resources :zones
 >>>>>>> master
+=======
+>>>>>>> parent of fa4db7a... Creación de Formularios
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
