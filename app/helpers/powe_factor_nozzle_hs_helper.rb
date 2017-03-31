@@ -1,0 +1,2 @@
+module PoweFactorNozzleHsHelper
+end

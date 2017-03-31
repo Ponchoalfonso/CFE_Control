@@ -1,0 +1,2 @@
+module PowerFactorSwitchesHelper
+end

@@ -1,0 +1,1 @@
+json.partial! "insulation_resistence_transformers/insulation_resistence_transformer", insulation_resistence_transformer: @insulation_resistence_transformer

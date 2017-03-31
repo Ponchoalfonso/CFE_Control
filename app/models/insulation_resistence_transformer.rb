@@ -1,0 +1,2 @@
+class InsulationResistenceTransformer < ApplicationRecord
+end

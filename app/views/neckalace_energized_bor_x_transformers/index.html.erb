@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Neckalace Energized Bor X Transformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Mide</th>
+      <th>Mode proof</th>
+      <th>Lost mv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @neckalace_energized_bor_x_transformers.each do |neckalace_energized_bor_x_transformer| %>
+      <tr>
+        <td><%= neckalace_energized_bor_x_transformer.number %></td>
+        <td><%= neckalace_energized_bor_x_transformer.mide %></td>
+        <td><%= neckalace_energized_bor_x_transformer.mode_proof %></td>
+        <td><%= neckalace_energized_bor_x_transformer.lost_mv %></td>
+        <td><%= link_to 'Show', neckalace_energized_bor_x_transformer %></td>
+        <td><%= link_to 'Edit', edit_neckalace_energized_bor_x_transformer_path(neckalace_energized_bor_x_transformer) %></td>
+        <td><%= link_to 'Destroy', neckalace_energized_bor_x_transformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Neckalace Energized Bor X Transformer', new_neckalace_energized_bor_x_transformer_path %>

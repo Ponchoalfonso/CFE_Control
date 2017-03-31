@@ -1,0 +1,1 @@
+json.array! @stationary_batteries_battery_banks, partial: 'stationary_batteries_battery_banks/stationary_batteries_battery_bank', as: :stationary_batteries_battery_bank

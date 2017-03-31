@@ -1,0 +1,1 @@
+json.array! @neckalace_energized_bor_h_transformers, partial: 'neckalace_energized_bor_h_transformers/neckalace_energized_bor_h_transformer', as: :neckalace_energized_bor_h_transformer

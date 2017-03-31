@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Insulation Resistence Switches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Proof</th>
+      <th>Position switch</th>
+      <th>Connection</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @insulation_resistence_switches.each do |insulation_resistence_switch| %>
+      <tr>
+        <td><%= insulation_resistence_switch.phase %></td>
+        <td><%= insulation_resistence_switch.proof %></td>
+        <td><%= insulation_resistence_switch.position_switch %></td>
+        <td><%= insulation_resistence_switch.connection %></td>
+        <td><%= insulation_resistence_switch.date %></td>
+        <td><%= link_to 'Show', insulation_resistence_switch %></td>
+        <td><%= link_to 'Edit', edit_insulation_resistence_switch_path(insulation_resistence_switch) %></td>
+        <td><%= link_to 'Destroy', insulation_resistence_switch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Insulation Resistence Switch', new_insulation_resistence_switch_path %>

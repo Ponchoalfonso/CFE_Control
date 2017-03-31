@@ -1,0 +1,1 @@
+json.partial! "neckalace_energized_bor_x_transformers/neckalace_energized_bor_x_transformer", neckalace_energized_bor_x_transformer: @neckalace_energized_bor_x_transformer

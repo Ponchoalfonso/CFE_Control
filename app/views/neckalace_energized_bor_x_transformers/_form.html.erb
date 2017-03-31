@@ -1,0 +1,37 @@
+<%= form_for(neckalace_energized_bor_x_transformer) do |f| %>
+  <% if neckalace_energized_bor_x_transformer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(neckalace_energized_bor_x_transformer.errors.count, "error") %> prohibited this neckalace_energized_bor_x_transformer from being saved:</h2>
+
+      <ul>
+      <% neckalace_energized_bor_x_transformer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %>
+    <%= f.number_field :number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mide %>
+    <%= f.text_field :mide %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mode_proof %>
+    <%= f.text_field :mode_proof %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lost_mv %>
+    <%= f.text_field :lost_mv %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

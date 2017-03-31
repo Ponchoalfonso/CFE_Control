@@ -1,0 +1,2 @@
+class PoweFactorNozzleH < ApplicationRecord
+end

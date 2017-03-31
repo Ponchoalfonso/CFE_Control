@@ -1,0 +1,1 @@
+json.partial! "insulation_resistence_switches/insulation_resistence_switch", insulation_resistence_switch: @insulation_resistence_switch

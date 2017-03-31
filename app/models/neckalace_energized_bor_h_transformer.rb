@@ -1,0 +1,2 @@
+class NeckalaceEnergizedBorHTransformer < ApplicationRecord
+end

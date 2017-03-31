@@ -1,0 +1,2 @@
+class PowerFactorSwitch < ApplicationRecord
+end

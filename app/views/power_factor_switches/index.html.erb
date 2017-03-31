@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Power Factor Switches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Proof</th>
+      <th>Position switches</th>
+      <th>Tat</th>
+      <th>Tbt</th>
+      <th>Selector</th>
+      <th>Mv</th>
+      <th>Fp current</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @power_factor_switches.each do |power_factor_switch| %>
+      <tr>
+        <td><%= power_factor_switch.phase %></td>
+        <td><%= power_factor_switch.proof %></td>
+        <td><%= power_factor_switch.position_switches %></td>
+        <td><%= power_factor_switch.tat %></td>
+        <td><%= power_factor_switch.tbt %></td>
+        <td><%= power_factor_switch.selector %></td>
+        <td><%= power_factor_switch.mv %></td>
+        <td><%= power_factor_switch.fp_current %></td>
+        <td><%= link_to 'Show', power_factor_switch %></td>
+        <td><%= link_to 'Edit', edit_power_factor_switch_path(power_factor_switch) %></td>
+        <td><%= link_to 'Destroy', power_factor_switch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Power Factor Switch', new_power_factor_switch_path %>

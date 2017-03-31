@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Powe Factor Nozzle Xes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Mide</th>
+      <th>Mode proof</th>
+      <th>Lost mv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @powe_factor_nozzle_xes.each do |powe_factor_nozzle_x| %>
+      <tr>
+        <td><%= powe_factor_nozzle_x.number %></td>
+        <td><%= powe_factor_nozzle_x.mide %></td>
+        <td><%= powe_factor_nozzle_x.mode_proof %></td>
+        <td><%= powe_factor_nozzle_x.lost_mv %></td>
+        <td><%= link_to 'Show', powe_factor_nozzle_x %></td>
+        <td><%= link_to 'Edit', edit_powe_factor_nozzle_x_path(powe_factor_nozzle_x) %></td>
+        <td><%= link_to 'Destroy', powe_factor_nozzle_x, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Powe Factor Nozzle X', new_powe_factor_nozzle_x_path %>

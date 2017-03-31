@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  outlet: 1
+  relationship: 9.99
+  step_a: 9.99
+  step_b: 9.99
+  step_c: 9.99
+  difference: 9.99
+
+two:
+  outlet: 1
+  relationship: 9.99
+  step_a: 9.99
+  step_b: 9.99
+  step_c: 9.99
+  difference: 9.99

@@ -1,0 +1,2 @@
+class InsulationResistenceSwitch < ApplicationRecord
+end

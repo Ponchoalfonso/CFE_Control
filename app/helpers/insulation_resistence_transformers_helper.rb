@@ -1,0 +1,2 @@
+module InsulationResistenceTransformersHelper
+end

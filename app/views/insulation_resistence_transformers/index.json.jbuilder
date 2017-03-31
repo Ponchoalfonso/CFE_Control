@@ -1,0 +1,1 @@
+json.array! @insulation_resistence_transformers, partial: 'insulation_resistence_transformers/insulation_resistence_transformer', as: :insulation_resistence_transformer

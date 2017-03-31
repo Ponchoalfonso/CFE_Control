@@ -1,0 +1,2 @@
+module PoweFactorNozzleXesHelper
+end
