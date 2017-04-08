@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hnswitches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Nozzle</th>
+      <th>Mv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hnswitches.each do |hnswitch| %>
+      <tr>
+        <td><%= hnswitch.phase %></td>
+        <td><%= hnswitch.nozzle %></td>
+        <td><%= hnswitch.mv %></td>
+        <td><%= link_to 'Show', hnswitch %></td>
+        <td><%= link_to 'Edit', edit_hnswitch_path(hnswitch) %></td>
+        <td><%= link_to 'Destroy', hnswitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hnswitch', new_hnswitch_path %>

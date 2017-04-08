@@ -1,0 +1,37 @@
+<%= form_for(npfxtransformer) do |f| %>
+  <% if npfxtransformer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(npfxtransformer.errors.count, "error") %> prohibited this npfxtransformer from being saved:</h2>
+
+      <ul>
+      <% npfxtransformer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %>
+    <%= f.number_field :number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mide %>
+    <%= f.text_field :mide %>
+  </div>
+
+  <div class="field">
+    <%= f.label :test_mode %>
+    <%= f.text_field :test_mode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lost_mv %>
+    <%= f.text_field :lost_mv %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

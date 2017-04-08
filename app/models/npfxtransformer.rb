@@ -1,0 +1,2 @@
+class Npfxtransformer < ApplicationRecord
+end

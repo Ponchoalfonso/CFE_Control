@@ -6,3 +6,16 @@ Aquí explicamos el significado de cada abreviación que existe dentro del proye
 
 Factor de potencia para Interruptores
   -Abreviación en ingles, Power Factor Switch (pfswitch)
+  -Abreviación en ingles, Insulation Resistance Switch (irswitch)
+  -Abreviación en ingles, Hot Necklace Switch (hnswitch)
+
+Transformador de Potencia y Transformador de Usos Propios
+  -Abreviación en ingles, Nozzle Power Factor H Transformer (npfhtransformer)
+  -Abreviación en ingles, Nozzle Power Factor X Transformer (npfxtransformer)
+  -Abreviación en ingles, Insulation Resistance Transformer (irtransformer)
+  -Abreviación en ingles, Energized Tassel Necklace H Transformer (etnhtransformer)
+  -Abreviación en ingles, Energized Tassel Necklace X Transformer (etnxtransformer)
+  -Abreviación en ingles, Transformation Relation Transformer (trtransformer)
+
+Banco de Baterias
+  -Abreviación en ingles, Stationary Batteries Bank (sbbank)

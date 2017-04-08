@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Phase:</strong>
+  <%= @hnswitch.phase %>
+</p>
+
+<p>
+  <strong>Nozzle:</strong>
+  <%= @hnswitch.nozzle %>
+</p>
+
+<p>
+  <strong>Mv:</strong>
+  <%= @hnswitch.mv %>
+</p>
+
+<%= link_to 'Edit', edit_hnswitch_path(@hnswitch) %> |
+<%= link_to 'Back', hnswitches_path %>

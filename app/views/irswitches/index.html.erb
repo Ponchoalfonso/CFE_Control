@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Irswitches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Proof</th>
+      <th>Position switch</th>
+      <th>Connection</th>
+      <th>Gigaohms</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @irswitches.each do |irswitch| %>
+      <tr>
+        <td><%= irswitch.phase %></td>
+        <td><%= irswitch.proof %></td>
+        <td><%= irswitch.position_switch %></td>
+        <td><%= irswitch.connection %></td>
+        <td><%= irswitch.gigaohms %></td>
+        <td><%= link_to 'Show', irswitch %></td>
+        <td><%= link_to 'Edit', edit_irswitch_path(irswitch) %></td>
+        <td><%= link_to 'Destroy', irswitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Irswitch', new_irswitch_path %>

@@ -1,0 +1,37 @@
+<%= form_for(trtranformer) do |f| %>
+  <% if trtranformer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trtranformer.errors.count, "error") %> prohibited this trtranformer from being saved:</h2>
+
+      <ul>
+      <% trtranformer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :take_tap %>
+    <%= f.number_field :take_tap %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nominal_relationship %>
+    <%= f.text_field :nominal_relationship %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phase %>
+    <%= f.text_field :phase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :difference %>
+    <%= f.text_field :difference %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

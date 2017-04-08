@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  phase: 1
+  proof: 1
+  position_switch: false
+  connection: MyString
+  gigaohms: 9.99
+
+two:
+  phase: 1
+  proof: 1
+  position_switch: false
+  connection: MyString
+  gigaohms: 9.99

@@ -1,0 +1,2 @@
+class Irswitch < ApplicationRecord
+end

@@ -1,0 +1,42 @@
+<%= form_for(irswitch) do |f| %>
+  <% if irswitch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(irswitch.errors.count, "error") %> prohibited this irswitch from being saved:</h2>
+
+      <ul>
+      <% irswitch.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :phase %>
+    <%= f.number_field :phase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :proof %>
+    <%= f.number_field :proof %>
+  </div>
+
+  <div class="field">
+    <%= f.label :position_switch %>
+    <%= f.check_box :position_switch %>
+  </div>
+
+  <div class="field">
+    <%= f.label :connection %>
+    <%= f.text_field :connection %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gigaohms %>
+    <%= f.text_field :gigaohms %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

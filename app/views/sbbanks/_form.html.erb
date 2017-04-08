@@ -1,0 +1,77 @@
+<%= form_for(sbbank) do |f| %>
+  <% if sbbank.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sbbank.errors.count, "error") %> prohibited this sbbank from being saved:</h2>
+
+      <ul>
+      <% sbbank.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cell %>
+    <%= f.number_field :cell %>
+  </div>
+
+  <div class="field">
+    <%= f.label :without_charge %>
+    <%= f.text_field :without_charge %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voltage_5min %>
+    <%= f.text_field :voltage_5min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amperage_5min %>
+    <%= f.text_field :amperage_5min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voltage_15min %>
+    <%= f.text_field :voltage_15min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amperage_15min %>
+    <%= f.text_field :amperage_15min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voltage_30min %>
+    <%= f.text_field :voltage_30min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amperage_30min %>
+    <%= f.text_field :amperage_30min %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voltage_1hr %>
+    <%= f.text_field :voltage_1hr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amperage_1hr %>
+    <%= f.text_field :amperage_1hr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voltage_2hr %>
+    <%= f.text_field :voltage_2hr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amperage_2hr %>
+    <%= f.text_field :amperage_2hr %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

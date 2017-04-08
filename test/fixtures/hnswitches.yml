@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  phase: MyString
+  nozzle: 1
+  mv: 9.99
+
+two:
+  phase: MyString
+  nozzle: 1
+  mv: 9.99

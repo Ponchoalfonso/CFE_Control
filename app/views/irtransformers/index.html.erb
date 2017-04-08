@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Irtransformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Proof</th>
+      <th>Line</th>
+      <th>Guard</th>
+      <th>Earth</th>
+      <th>Measure</th>
+      <th>Number</th>
+      <th>Time</th>
+      <th>Resistence</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @irtransformers.each do |irtransformer| %>
+      <tr>
+        <td><%= irtransformer.proof %></td>
+        <td><%= irtransformer.line %></td>
+        <td><%= irtransformer.guard %></td>
+        <td><%= irtransformer.earth %></td>
+        <td><%= irtransformer.measure %></td>
+        <td><%= irtransformer.number %></td>
+        <td><%= irtransformer.time %></td>
+        <td><%= irtransformer.resistence %></td>
+        <td><%= link_to 'Show', irtransformer %></td>
+        <td><%= link_to 'Edit', edit_irtransformer_path(irtransformer) %></td>
+        <td><%= link_to 'Destroy', irtransformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Irtransformer', new_irtransformer_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Phase:</strong>
+  <%= @irswitch.phase %>
+</p>
+
+<p>
+  <strong>Proof:</strong>
+  <%= @irswitch.proof %>
+</p>
+
+<p>
+  <strong>Position switch:</strong>
+  <%= @irswitch.position_switch %>
+</p>
+
+<p>
+  <strong>Connection:</strong>
+  <%= @irswitch.connection %>
+</p>
+
+<p>
+  <strong>Gigaohms:</strong>
+  <%= @irswitch.gigaohms %>
+</p>
+
+<%= link_to 'Edit', edit_irswitch_path(@irswitch) %> |
+<%= link_to 'Back', irswitches_path %>

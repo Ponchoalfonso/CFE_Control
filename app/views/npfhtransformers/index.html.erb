@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Npfhtransformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Mide</th>
+      <th>Test mode</th>
+      <th>Lost mv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @npfhtransformers.each do |npfhtransformer| %>
+      <tr>
+        <td><%= npfhtransformer.number %></td>
+        <td><%= npfhtransformer.mide %></td>
+        <td><%= npfhtransformer.test_mode %></td>
+        <td><%= npfhtransformer.lost_mv %></td>
+        <td><%= link_to 'Show', npfhtransformer %></td>
+        <td><%= link_to 'Edit', edit_npfhtransformer_path(npfhtransformer) %></td>
+        <td><%= link_to 'Destroy', npfhtransformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Npfhtransformer', new_npfhtransformer_path %>

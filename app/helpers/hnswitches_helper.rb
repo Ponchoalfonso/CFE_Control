@@ -1,0 +1,2 @@
+module HnswitchesHelper
+end

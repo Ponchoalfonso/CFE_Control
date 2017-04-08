@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cell: 1
+  without_charge: 9.99
+  voltage_5min: 9.99
+  amperage_5min: 9.99
+  voltage_15min: 9.99
+  amperage_15min: 9.99
+  voltage_30min: 9.99
+  amperage_30min: 9.99
+  voltage_1hr: 9.99
+  amperage_1hr: 9.99
+  voltage_2hr: 9.99
+  amperage_2hr: 9.99
+
+two:
+  cell: 1
+  without_charge: 9.99
+  voltage_5min: 9.99
+  amperage_5min: 9.99
+  voltage_15min: 9.99
+  amperage_15min: 9.99
+  voltage_30min: 9.99
+  amperage_30min: 9.99
+  voltage_1hr: 9.99
+  amperage_1hr: 9.99
+  voltage_2hr: 9.99
+  amperage_2hr: 9.99

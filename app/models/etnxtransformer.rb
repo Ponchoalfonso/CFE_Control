@@ -1,0 +1,2 @@
+class Etnxtransformer < ApplicationRecord
+end

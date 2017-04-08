@@ -1,0 +1,2 @@
+class Sbbank < ApplicationRecord
+end

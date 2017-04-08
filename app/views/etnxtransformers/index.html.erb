@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Etnxtransformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Mide</th>
+      <th>Test mode</th>
+      <th>Lost mv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @etnxtransformers.each do |etnxtransformer| %>
+      <tr>
+        <td><%= etnxtransformer.number %></td>
+        <td><%= etnxtransformer.mide %></td>
+        <td><%= etnxtransformer.test_mode %></td>
+        <td><%= etnxtransformer.lost_mv %></td>
+        <td><%= link_to 'Show', etnxtransformer %></td>
+        <td><%= link_to 'Edit', edit_etnxtransformer_path(etnxtransformer) %></td>
+        <td><%= link_to 'Destroy', etnxtransformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Etnxtransformer', new_etnxtransformer_path %>

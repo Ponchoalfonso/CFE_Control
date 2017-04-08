@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trtranformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Take tap</th>
+      <th>Nominal relationship</th>
+      <th>Phase</th>
+      <th>Difference</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trtranformers.each do |trtranformer| %>
+      <tr>
+        <td><%= trtranformer.take_tap %></td>
+        <td><%= trtranformer.nominal_relationship %></td>
+        <td><%= trtranformer.phase %></td>
+        <td><%= trtranformer.difference %></td>
+        <td><%= link_to 'Show', trtranformer %></td>
+        <td><%= link_to 'Edit', edit_trtranformer_path(trtranformer) %></td>
+        <td><%= link_to 'Destroy', trtranformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trtranformer', new_trtranformer_path %>

@@ -1,0 +1,2 @@
+class Hnswitch < ApplicationRecord
+end

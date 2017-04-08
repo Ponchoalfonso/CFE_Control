@@ -1,0 +1,2 @@
+class Irtransformer < ApplicationRecord
+end

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Npfxtransformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Mide</th>
+      <th>Test mode</th>
+      <th>Lost mv</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @npfxtransformers.each do |npfxtransformer| %>
+      <tr>
+        <td><%= npfxtransformer.number %></td>
+        <td><%= npfxtransformer.mide %></td>
+        <td><%= npfxtransformer.test_mode %></td>
+        <td><%= npfxtransformer.lost_mv %></td>
+        <td><%= link_to 'Show', npfxtransformer %></td>
+        <td><%= link_to 'Edit', edit_npfxtransformer_path(npfxtransformer) %></td>
+        <td><%= link_to 'Destroy', npfxtransformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Npfxtransformer', new_npfxtransformer_path %>

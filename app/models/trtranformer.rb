@@ -1,0 +1,2 @@
+class Trtranformer < ApplicationRecord
+end
