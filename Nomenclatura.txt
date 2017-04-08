@@ -1,0 +1,8 @@
+Aquí explicamos el significado de cada abreviación que existe dentro del proyecto, en modelos y controladores.
+
+* * * * * * * * * * * *
+* Formatos de prueba  *
+* * * * * * * * * * * *
+
+Factor de potencia para Interruptores
+  -Abreviación en ingles, Power Factor Switch (pfswitch)
