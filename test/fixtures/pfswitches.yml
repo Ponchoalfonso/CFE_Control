@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  phase: 1
+  proof: 1
+  switch_position: false
+  tat: 1
+  tbt: MyString
+  selector_switch: MyString
+  mv: 9.99
+  fp_current: 9.99
+
+two:
+  phase: 1
+  proof: 1
+  switch_position: false
+  tat: 1
+  tbt: MyString
+  selector_switch: MyString
+  mv: 9.99
+  fp_current: 9.99

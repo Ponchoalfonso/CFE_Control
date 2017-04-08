@@ -1,0 +1,57 @@
+<%= form_for(pfswitch) do |f| %>
+  <% if pfswitch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pfswitch.errors.count, "error") %> prohibited this pfswitch from being saved:</h2>
+
+      <ul>
+      <% pfswitch.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :phase %>
+    <%= f.number_field :phase %>
+  </div>
+
+  <div class="field">
+    <%= f.label :proof %>
+    <%= f.number_field :proof %>
+  </div>
+
+  <div class="field">
+    <%= f.label :switch_position %>
+    <%= f.check_box :switch_position %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tat %>
+    <%= f.number_field :tat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tbt %>
+    <%= f.text_field :tbt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :selector_switch %>
+    <%= f.text_field :selector_switch %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mv %>
+    <%= f.text_field :mv %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fp_current %>
+    <%= f.text_field :fp_current %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

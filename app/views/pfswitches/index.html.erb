@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pfswitches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Proof</th>
+      <th>Switch position</th>
+      <th>Tat</th>
+      <th>Tbt</th>
+      <th>Selector switch</th>
+      <th>Mv</th>
+      <th>Fp current</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pfswitches.each do |pfswitch| %>
+      <tr>
+        <td><%= pfswitch.phase %></td>
+        <td><%= pfswitch.proof %></td>
+        <td><%= pfswitch.switch_position %></td>
+        <td><%= pfswitch.tat %></td>
+        <td><%= pfswitch.tbt %></td>
+        <td><%= pfswitch.selector_switch %></td>
+        <td><%= pfswitch.mv %></td>
+        <td><%= pfswitch.fp_current %></td>
+        <td><%= link_to 'Show', pfswitch %></td>
+        <td><%= link_to 'Edit', edit_pfswitch_path(pfswitch) %></td>
+        <td><%= link_to 'Destroy', pfswitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pfswitch', new_pfswitch_path %>

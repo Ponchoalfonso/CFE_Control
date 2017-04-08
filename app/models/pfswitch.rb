@@ -1,0 +1,2 @@
+class Pfswitch < ApplicationRecord
+end
