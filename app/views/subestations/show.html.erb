@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @subestation.name %>
+</p>
+
+<p>
+  <strong>Abreviation:</strong>
+  <%= @subestation.abreviation %>
+</p>
+
+<p>
+  <strong>Identifier:</strong>
+  <%= @subestation.identifier %>
+</p>
+
+<p>
+  <strong>Zone:</strong>
+  <%= Zone.find(@subestation.zone_id).name %>
+</p>
+
+<%= link_to 'Edit', edit_subestation_path(@subestation) %> |
+<%= link_to 'Back', subestations_path %>

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Subestations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Abreviation</th>
+      <th>Identifier</th>
+      <th>Zone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subestations.each do |subestation| %>
+      <tr>
+        <td><%= subestation.name %></td>
+        <td><%= subestation.abreviation %></td>
+        <td><%= subestation.identifier %></td>
+        <td><%= Zone.find(subestation.zone_id).name %></td>
+        <td><%= link_to 'Show', subestation %></td>
+        <td><%= link_to 'Edit', edit_subestation_path(subestation) %></td>
+        <td><%= link_to 'Destroy', subestation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subestation', new_subestation_path %>
