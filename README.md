@@ -1,11 +1,7 @@
 # CFE Control (Nombre clave de la palicación)
 ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-blue.svg)
 
-CFE Control es una aplicación elaborada sobre Ruby on Rails, la cual aun estamos trabajando en su desarrollo.
-Nuestro objetivo con este proyecto es facilitar el trabajo que se realiza en Comisión Federal de Electricidad
-en la zona Zapotlán (el programa se adaptará a las necesidades de esta zona), de forma que los trabajadores
-puedan realizar sus debidas tareas en las subestaciones y recolectar datos que serán procesados por la aplica-
-ción para generar reportes de una forma mas sencilla y cómoda.
+CFE Control es una aplicación elaborada sobre Ruby on Rails, la cual aun estamos trabajando en su desarrollo. Nuestro objetivo con este proyecto es facilitar el trabajo que se realiza en Comisión Federal de Electricidad en la zona Zapotlán (el programa se adaptará a las necesidades de esta zona), de forma que los trabajadores puedan realizar sus debidas tareas en las subestaciones y recolectar datos que serán procesados por la aplicación para generar reportes de una forma mas sencilla y cómoda.
 
 ## ¿Quieres probar lo que hemos desarrollado hasta ahora?:
 
