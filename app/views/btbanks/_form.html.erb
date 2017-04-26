@@ -1,0 +1,32 @@
+<%= form_for(btbank) do |f| %>
+  <% if btbank.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(btbank.errors.count, "error") %> prohibited this btbank from being saved:</h2>
+
+      <ul>
+      <% btbank.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastupdate %>
+    <%= f.text_field :lastupdate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subestation %>
+    <%= f.select(:subestation_id, options_for_select(@subestations), {}, :class => "selectArea") %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

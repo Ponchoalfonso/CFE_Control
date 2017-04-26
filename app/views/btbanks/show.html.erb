@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @btbank.name %>
+</p>
+
+<p>
+  <strong>Lastupdate:</strong>
+  <%= @btbank.lastupdate %>
+</p>
+
+<p>
+  <strong>Subestation:</strong>
+  <%= Subestation.find(@btbank.subestation_id).name %>
+</p>
+
+<%= link_to 'Edit', edit_btbank_path(@btbank) %> |
+<%= link_to 'Back', btbanks_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Owntransformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Lastupdate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @owntransformers.each do |owntransformer| %>
+      <tr>
+        <td><%= owntransformer.name %></td>
+        <td><%= owntransformer.lastupdate %></td>
+        <td><%= link_to 'Show', owntransformer %></td>
+        <td><%= link_to 'Edit', edit_owntransformer_path(owntransformer) %></td>
+        <td><%= link_to 'Destroy', owntransformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Owntransformer', new_owntransformer_path %>

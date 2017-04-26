@@ -1,6 +1,14 @@
 Aquí explicamos el significado de cada abreviación que existe dentro del proyecto, en modelos y controladores.
 
 * * * * * * * * * * * *
+*      Aparatos       *
+* * * * * * * * * * * *
+  -Switches (switch)
+  -Power transformer (pwtransformer)
+  -Own use transformer (owntransformer)
+  -Battery bank (btbank)
+
+* * * * * * * * * * * *
 * Formatos de prueba  *
 * * * * * * * * * * * *
 

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @owntransformer.name %>
+</p>
+
+<p>
+  <strong>Lastupdate:</strong>
+  <%= @owntransformer.lastupdate %>
+</p>
+
+<p>
+  <strong>Subestation:</strong>
+  <%= Subestation.find(@owntransformer.subestation_id).name %>
+</p>
+
+<%= link_to 'Edit', edit_owntransformer_path(@owntransformer) %> |
+<%= link_to 'Back', owntransformers_path %>

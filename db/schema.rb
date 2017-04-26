@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170408194010) do
+ActiveRecord::Schema.define(version: 20170426132059) do
+
+  create_table "btbanks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "lastupdate"
+    t.integer  "subestation_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["subestation_id"], name: "index_btbanks_on_subestation_id", using: :btree
+  end
 
   create_table "etnhtransformers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "number"
@@ -79,6 +88,15 @@ ActiveRecord::Schema.define(version: 20170408194010) do
     t.datetime "updated_at",                null: false
   end
 
+  create_table "owntransformers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "lastupdate"
+    t.integer  "subestation_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["subestation_id"], name: "index_owntransformers_on_subestation_id", using: :btree
+  end
+
   create_table "pfswitches", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "phase"
     t.integer  "proof"
@@ -90,6 +108,15 @@ ActiveRecord::Schema.define(version: 20170408194010) do
     t.decimal  "fp_current",      precision: 10
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+  end
+
+  create_table "pwtransformers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "lastupdate"
+    t.integer  "subestation_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["subestation_id"], name: "index_pwtransformers_on_subestation_id", using: :btree
   end
 
   create_table "regions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -125,6 +152,15 @@ ActiveRecord::Schema.define(version: 20170408194010) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["zone_id"], name: "index_subestations_on_zone_id", using: :btree
+  end
+
+  create_table "switches", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "lastupdate"
+    t.integer  "subestation_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["subestation_id"], name: "index_switches_on_subestation_id", using: :btree
   end
 
   create_table "trtranformers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

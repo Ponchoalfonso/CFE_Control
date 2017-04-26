@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pwtransformer.name %>
+</p>
+
+<p>
+  <strong>Lastupdate:</strong>
+  <%= @pwtransformer.lastupdate %>
+</p>
+
+<p>
+  <strong>Subestation:</strong>
+  <%= Subestation.find(@pwtransformer.subestation_id).name %>
+</p>
+
+<%= link_to 'Edit', edit_pwtransformer_path(@pwtransformer) %> |
+<%= link_to 'Back', pwtransformers_path %>

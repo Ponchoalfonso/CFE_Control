@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Btbanks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Lastupdate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @btbanks.each do |btbank| %>
+      <tr>
+        <td><%= btbank.name %></td>
+        <td><%= btbank.lastupdate %></td>
+        <td><%= link_to 'Show', btbank %></td>
+        <td><%= link_to 'Edit', edit_btbank_path(btbank) %></td>
+        <td><%= link_to 'Destroy', btbank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Btbank', new_btbank_path %>

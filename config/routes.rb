@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :btbanks
+  resources :owntransformers
+  resources :pwtransformers
+  resources :switches
   resources :sbbanks
   resources :trtranformers
   resources :etnxtransformers

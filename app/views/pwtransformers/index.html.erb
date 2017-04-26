@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pwtransformers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Lastupdate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pwtransformers.each do |pwtransformer| %>
+      <tr>
+        <td><%= pwtransformer.name %></td>
+        <td><%= pwtransformer.lastupdate %></td>
+        <td><%= link_to 'Show', pwtransformer %></td>
+        <td><%= link_to 'Edit', edit_pwtransformer_path(pwtransformer) %></td>
+        <td><%= link_to 'Destroy', pwtransformer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pwtransformer', new_pwtransformer_path %>
