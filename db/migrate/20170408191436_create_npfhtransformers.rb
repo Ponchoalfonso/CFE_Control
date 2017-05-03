@@ -5,7 +5,7 @@ class CreateNpfhtransformers < ActiveRecord::Migration[5.0]
       t.string :mide
       t.string :test_mode
       t.decimal :lost_mv
-
+      t.integer :t_number
       t.timestamps
     end
   end

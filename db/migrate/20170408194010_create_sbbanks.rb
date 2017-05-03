@@ -14,6 +14,7 @@ class CreateSbbanks < ActiveRecord::Migration[5.0]
       t.decimal :voltage_2hr
       t.decimal :amperage_2hr
 
+      t.integer :t_number
       t.timestamps
     end
   end

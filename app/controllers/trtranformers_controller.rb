@@ -69,6 +69,6 @@ class TrtranformersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def trtranformer_params
-      params.require(:trtranformer).permit(:take_tap, :nominal_relationship, :phase, :difference)
+      params.require(:trtranformer).permit(:take_tap, :nominal_relationship, :phase, :difference, :t_number)
     end
 end

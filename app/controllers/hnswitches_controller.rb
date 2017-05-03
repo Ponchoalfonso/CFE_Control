@@ -69,6 +69,6 @@ class HnswitchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hnswitch_params
-      params.require(:hnswitch).permit(:phase, :nozzle, :mv)
+      params.require(:hnswitch).permit(:phase, :nozzle, :mv, :t_number)
     end
 end

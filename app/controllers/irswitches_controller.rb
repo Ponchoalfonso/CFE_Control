@@ -69,6 +69,6 @@ class IrswitchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def irswitch_params
-      params.require(:irswitch).permit(:phase, :proof, :position_switch, :connection, :gigaohms)
+      params.require(:irswitch).permit(:phase, :proof, :position_switch, :connection, :gigaohms, :t_number)
     end
 end

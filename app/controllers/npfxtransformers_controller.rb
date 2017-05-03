@@ -69,6 +69,6 @@ class NpfxtransformersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def npfxtransformer_params
-      params.require(:npfxtransformer).permit(:number, :mide, :test_mode, :lost_mv)
+      params.require(:npfxtransformer).permit(:number, :mide, :test_mode, :lost_mv, :t_number)
     end
 end

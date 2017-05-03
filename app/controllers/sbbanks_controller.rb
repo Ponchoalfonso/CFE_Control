@@ -69,6 +69,6 @@ class SbbanksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sbbank_params
-      params.require(:sbbank).permit(:cell, :without_charge, :voltage_5min, :amperage_5min, :voltage_15min, :amperage_15min, :voltage_30min, :amperage_30min, :voltage_1hr, :amperage_1hr, :voltage_2hr, :amperage_2hr)
+      params.require(:sbbank).permit(:cell, :without_charge, :voltage_5min, :amperage_5min, :voltage_15min, :amperage_15min, :voltage_30min, :amperage_30min, :voltage_1hr, :amperage_1hr, :voltage_2hr, :amperage_2hr, :t_number)
     end
 end

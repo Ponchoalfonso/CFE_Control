@@ -6,6 +6,7 @@ class CreateTrtranformers < ActiveRecord::Migration[5.0]
       t.decimal :phase
       t.decimal :difference
 
+      t.integer :t_number
       t.timestamps
     end
   end

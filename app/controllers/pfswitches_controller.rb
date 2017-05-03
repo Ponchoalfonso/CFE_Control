@@ -69,6 +69,6 @@ class PfswitchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pfswitch_params
-      params.require(:pfswitch).permit(:phase, :proof, :switch_position, :tat, :tbt, :selector_switch, :mv, :fp_current)
+      params.require(:pfswitch).permit(:phase, :proof, :switch_position, :tat, :tbt, :selector_switch, :mv, :fp_current, :t_number)
     end
 end

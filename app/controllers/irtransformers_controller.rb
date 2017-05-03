@@ -69,6 +69,6 @@ class IrtransformersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def irtransformer_params
-      params.require(:irtransformer).permit(:proof, :line, :guard, :earth, :measure, :number, :time, :resistence)
+      params.require(:irtransformer).permit(:proof, :line, :guard, :earth, :measure, :number, :time, :resistence, :t_number)
     end
 end

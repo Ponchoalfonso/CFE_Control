@@ -9,7 +9,7 @@ class CreateIrtransformers < ActiveRecord::Migration[5.0]
       t.integer :number
       t.decimal :time
       t.decimal :resistence
-
+      t.integer :t_number
       t.timestamps
     end
   end

@@ -6,7 +6,7 @@ class CreateIrswitches < ActiveRecord::Migration[5.0]
       t.boolean :position_switch
       t.string :connection
       t.decimal :gigaohms
-
+      t.integer :t_number
       t.timestamps
     end
   end

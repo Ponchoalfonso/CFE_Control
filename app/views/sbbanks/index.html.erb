@@ -17,6 +17,7 @@
       <th>Amperage 1hr</th>
       <th>Voltage 2hr</th>
       <th>Amperage 2hr</th>
+      <th>t_number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -36,6 +37,7 @@
         <td><%= sbbank.amperage_1hr %></td>
         <td><%= sbbank.voltage_2hr %></td>
         <td><%= sbbank.amperage_2hr %></td>
+        <td><%= sbbank.t_number%></td>
         <td><%= link_to 'Show', sbbank %></td>
         <td><%= link_to 'Edit', edit_sbbank_path(sbbank) %></td>
         <td><%= link_to 'Destroy', sbbank, method: :delete, data: { confirm: 'Are you sure?' } %></td>

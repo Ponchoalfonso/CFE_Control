@@ -69,6 +69,6 @@ class EtnhtransformersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def etnhtransformer_params
-      params.require(:etnhtransformer).permit(:number, :mide, :test_mode, :lost_mv)
+      params.require(:etnhtransformer).permit(:number, :mide, :test_mode, :lost_mv, :t_number)
     end
 end

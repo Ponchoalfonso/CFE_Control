@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.string   "mide"
     t.string   "test_mode"
     t.decimal  "lost_mv",    precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
@@ -35,6 +36,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.string   "mide"
     t.string   "test_mode"
     t.decimal  "lost_mv",    precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
@@ -43,6 +45,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.string   "phase"
     t.integer  "nozzle"
     t.decimal  "mv",         precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
@@ -53,6 +56,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.boolean  "position_switch"
     t.string   "connection"
     t.decimal  "gigaohms",        precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
   end
@@ -66,6 +70,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.integer  "number"
     t.decimal  "time",       precision: 10
     t.decimal  "resistence", precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
@@ -75,6 +80,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.string   "mide"
     t.string   "test_mode"
     t.decimal  "lost_mv",    precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
@@ -84,6 +90,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.string   "mide"
     t.string   "test_mode"
     t.decimal  "lost_mv",    precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
@@ -106,6 +113,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.string   "selector_switch"
     t.decimal  "mv",              precision: 10
     t.decimal  "fp_current",      precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
   end
@@ -140,6 +148,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.decimal  "amperage_1hr",   precision: 10
     t.decimal  "voltage_2hr",    precision: 10
     t.decimal  "amperage_2hr",   precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
   end
@@ -168,6 +177,7 @@ ActiveRecord::Schema.define(version: 20170426132059) do
     t.decimal  "nominal_relationship", precision: 10
     t.decimal  "phase",                precision: 10
     t.decimal  "difference",           precision: 10
+    t.integer  "t_number"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end

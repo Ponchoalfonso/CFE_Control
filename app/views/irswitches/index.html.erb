@@ -10,6 +10,7 @@
       <th>Position switch</th>
       <th>Connection</th>
       <th>Gigaohms</th>
+      <th>t_number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= irswitch.position_switch %></td>
         <td><%= irswitch.connection %></td>
         <td><%= irswitch.gigaohms %></td>
+        <td><%= irswitch.t_number%></td>
         <td><%= link_to 'Show', irswitch %></td>
         <td><%= link_to 'Edit', edit_irswitch_path(irswitch) %></td>
         <td><%= link_to 'Destroy', irswitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>

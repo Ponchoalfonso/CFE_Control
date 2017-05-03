@@ -5,7 +5,6 @@ class CreateZones < ActiveRecord::Migration[5.0]
       t.string :abreviation
       t.integer :identifier
       t.references :region
-
       t.timestamps
     end
   end

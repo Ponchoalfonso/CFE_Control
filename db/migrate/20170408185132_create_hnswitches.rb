@@ -4,7 +4,7 @@ class CreateHnswitches < ActiveRecord::Migration[5.0]
       t.string :phase
       t.integer :nozzle
       t.decimal :mv
-
+      t.integer :t_number
       t.timestamps
     end
   end

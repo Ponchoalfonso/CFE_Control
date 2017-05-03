@@ -9,6 +9,7 @@ class CreatePfswitches < ActiveRecord::Migration[5.0]
       t.string :selector_switch
       t.decimal :mv
       t.decimal :fp_current
+      t.integer :t_number
 
       t.timestamps
     end

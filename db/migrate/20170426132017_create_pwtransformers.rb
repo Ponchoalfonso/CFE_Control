@@ -5,6 +5,7 @@ class CreatePwtransformers < ActiveRecord::Migration[5.0]
       t.string :lastupdate
       t.references :subestation
 
+      
       t.timestamps
     end
   end
